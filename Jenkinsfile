@@ -8,12 +8,12 @@ pipeline {
     }
     stage('Compiling') {
       steps {
-        sh 'javac Start.java'
+        bat 'javac Start.java'
       }
     }
     stage('Testing') {
       steps {
-        sh 'java Start.java'
+        bat 'java Start'
       }
     }
   }
