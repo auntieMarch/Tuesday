@@ -11,7 +11,7 @@ pipeline {
          bat 'javac Start.java'
       }   
     }
-		stage('Executing') {
+	  stage('Executing') {
 			steps {
 				bat 'java Start'
 			}	
