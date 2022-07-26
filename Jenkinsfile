@@ -11,5 +11,10 @@ pipeline {
         bat 'javac Start.java'
       }
     }
+    stage('RunningJava') {
+      steps {
+        bat 'java Start'
+      }
+    }
   }
 }
