@@ -6,5 +6,10 @@ pipeline {
         echo 'Initializing'
       }
     }
+    stage('Compiling') {
+      steps {
+        bat 'javac Start.java'
+      }
+    }
   }
 }
